@@ -1,0 +1,2085 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "TTTravels-Regular";
+  color: #404040;
+  box-sizing: border-box;
+}
+
+html.lock,
+body.lock {
+  overflow: hidden;
+}
+
+.buttonWrapper {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  bottom: -10%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  text-align: center;
+  position: static;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-15deg);
+}
+
+.bg {
+  position: absolute;
+  border-radius: 50%;
+  display: none;
+}
+
+.item1 {
+  background-color: #5a30f0;
+  width: 195px;
+  height: 195px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+
+.buttonWrapper:hover {
+  bottom: -2%;
+}
+.buttonWrapper:hover .item1 {
+  border: 10px solid rgba(255, 255, 255, 0.5);
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapper__container {
+  width: 100%;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-section .hero-section__content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 150px;
+}
+.hero-section .hero-section__content .hero-section__content__hero-img {
+  background-image: url("../img/hero-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 1000px;
+  flex: 0 0 50%;
+}
+.hero-section .hero-section__content .hero-section__content__hero-title {
+  max-width: 400px;
+  flex: 0 0 40%;
+  margin: -10px 0px 0px 0px;
+}
+.hero-section .hero-section__content .hero-section__content__hero-title h1 {
+  font-size: 76px;
+  line-height: 83px;
+  font-family: "TTTravels-Light";
+  margin: 0px 0px 40px 0px;
+}
+.hero-section .hero-section__content .hero-section__content__hero-title .hero-section__content__hero-title-paragraph {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.advantages-section {
+  padding: 70px 0px;
+}
+.advantages-section .advantages-section__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item {
+  position: relative;
+  text-align: center;
+  background-color: #f3f6fb;
+  border-radius: 8px;
+  padding: 30px 30px 0px 30px;
+  height: 328px;
+  flex: 0 0 18%;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner .advantages-section__content__item__headline {
+  font-size: 24px;
+  line-height: 31px;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner .advantages-section__content__item__img {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-1 {
+  background-image: url("../img/card-img-1.png");
+  width: 151px;
+  height: 151px;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-2 {
+  background-image: url("../img/card-img-2.png");
+  width: 188px;
+  height: 151px;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-3 {
+  background-image: url("../img/card-img-3.png");
+  width: 211px;
+  height: 151px;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-4 {
+  background-image: url("../img/card-img-4.png");
+  width: 200px;
+  height: 151px;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #5a30f0;
+  color: white;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.advantages-section .advantages-section__content .advantages-section__content__item:hover .advantages-section__content__item__description {
+  opacity: 1;
+}
+
+.how-section {
+  margin: 150px 0px;
+}
+.how-section .how-section__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.how-section .how-section__content .how-section__content__headline {
+  font-size: 44px;
+  line-height: 52px;
+  flex: 0 0 60%;
+}
+.how-section .how-section__content .how-section__content__paragraph {
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 25px;
+  flex: 0 0 40%;
+}
+.how-section .how-section__fullscreen {
+  position: relative;
+  height: 800px;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg .plus {
+  position: absolute;
+  background-image: url("../img/+.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg .plus .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg .plus .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg .plus:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-1 {
+  top: 30%;
+  left: 35%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-2 {
+  top: 60%;
+  left: 30%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-3 {
+  top: 92%;
+  left: 40%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-4 {
+  top: 60%;
+  left: 50%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-5 {
+  top: 80%;
+  left: 60%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-6 {
+  top: 50%;
+  left: 60%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-7 {
+  top: 66%;
+  left: 75%;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .slide-1 {
+  background-image: url("../img/how-bg-1.png");
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .slide-2 {
+  background-image: url("../img/how-bg-2.png");
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .slide-3 {
+  background-image: url("../img/how-bg-1.png");
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__img .slide-4 {
+  background-image: url("../img/how-bg-2.png");
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block {
+  position: relative;
+  background-color: #5a30f0;
+  width: 375px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+  padding: 40px;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: "TTTravels-Medium";
+  align-self: flex-start;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+  font-size: 44px;
+  line-height: 120%;
+  font-family: "TTTravels-Light";
+  cursor: pointer;
+  margin: 15px 0px;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+  text-decoration: none;
+  color: white;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active {
+  font-style: italic;
+}
+.how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+  content: " ";
+  width: 32px;
+  height: 32px;
+  display: block;
+  float: left;
+  margin: 5px 20px 0px 0px;
+  background-image: url("../img/right-arrow.png");
+}
+.how-section .how-section__fullscreen-mob {
+  position: relative;
+  height: 800px;
+  display: none;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus {
+  position: absolute;
+  background-image: url("../img/+.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-1 {
+  top: 30%;
+  left: 35%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-2 {
+  top: 60%;
+  left: 30%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-3 {
+  top: 92%;
+  left: 40%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-4 {
+  top: 60%;
+  left: 50%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-5 {
+  top: 80%;
+  left: 60%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-6 {
+  top: 50%;
+  left: 60%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-7 {
+  top: 66%;
+  left: 75%;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-1 {
+  background-image: url("../img/how-bg-1.png");
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-2 {
+  background-image: url("../img/how-bg-2.png");
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-3 {
+  background-image: url("../img/how-bg-1.png");
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-4 {
+  background-image: url("../img/how-bg-2.png");
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block {
+  position: relative;
+  background-color: #5a30f0;
+  width: 375px;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+  padding: 40px;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  font-size: 16px;
+  line-height: 130%;
+  font-family: "TTTravels-Medium";
+  align-self: flex-start;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+  font-size: 44px;
+  line-height: 120%;
+  font-family: "TTTravels-Light";
+  cursor: pointer;
+  margin: 15px 0px;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+  text-decoration: none;
+  color: white;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active {
+  font-style: italic;
+}
+.how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+  content: " ";
+  width: 32px;
+  height: 32px;
+  display: block;
+  float: left;
+  margin: 5px 20px 0px 0px;
+  background-image: url("../img/right-arrow.png");
+}
+
+@media (max-width: 1280px) {
+  .content {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .hero-section .hero-section__content {
+    gap: 80px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-img {
+    height: 700px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title {
+    max-width: 400px;
+    margin: -10px 0px 0px 0px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title h1 {
+    font-size: 64px;
+    line-height: 72px;
+    margin: 0px 0px 40px 0px;
+  }
+  .advantages-section {
+    padding: 70px 0px;
+  }
+  .advantages-section .advantages-section__content {
+    justify-content: center;
+    gap: 20px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item {
+    padding: 20px 20px 0px 20px;
+    height: 280px;
+    flex: 0 0 18%;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner .advantages-section__content__item__headline {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-1 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-2 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-3 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-4 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__description {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .how-section {
+    margin: 100px 0px;
+  }
+  .how-section .how-section__content {
+    padding: 0px 40px;
+  }
+  .how-section .how-section__content .how-section__content__headline {
+    flex: 0 0 50%;
+  }
+  .how-section .how-section__content .how-section__content__paragraph {
+    flex: 0 0 50%;
+  }
+  .how-section .how-section__fullscreen {
+    position: relative;
+    height: 600px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block {
+    width: 300px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 40px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 30px;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    content: " ";
+    width: 24px;
+    height: 24px;
+    background-size: 100%;
+  }
+  .how-section .how-section__fullscreen-mob {
+    position: relative;
+    height: 800px;
+    display: none;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus {
+    position: absolute;
+    background-image: url("../img/+.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-1 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-2 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-3 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-4 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block {
+    position: relative;
+    background-color: #5a30f0;
+    width: 375px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 40px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    font-size: 16px;
+    line-height: 130%;
+    font-family: "TTTravels-Medium";
+    align-self: flex-start;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 44px;
+    line-height: 120%;
+    font-family: "TTTravels-Light";
+    cursor: pointer;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active {
+    font-style: italic;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    content: " ";
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+    margin: 5px 20px 0px 0px;
+    background-image: url("../img/right-arrow.png");
+  }
+}
+.lightHeader {
+  background-color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.07);
+}
+
+.header-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.header-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 3;
+}
+.header-container .header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 40px;
+}
+.header-container .header .header__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.header-container .header .header__content .header__content__logo img {
+  width: 100%;
+}
+.header-container .header .header__content .header__content__burger {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 10px;
+  z-index: 3;
+}
+.header-container .header .header__content .header__content__burger:before, .header-container .header .header__content .header__content__burger:after {
+  content: "";
+  background-color: #404040;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.header-container .header .header__content .header__content__burger:before {
+  top: 0;
+}
+.header-container .header .header__content .header__content__burger:after {
+  bottom: 0;
+}
+.header-container .header .header__content .header__content__switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: white;
+  width: 130px;
+  border-radius: 18px;
+  padding: 3px;
+  font-family: "TTTravels-Medium";
+  font-size: 14px;
+  border: 1px solid #e2e8f0;
+}
+.header-container .header .header__content .header__content__switcher .switcher-home {
+  background-color: #5a30f0;
+  width: 55px;
+  height: 30px;
+  border-radius: 18px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .header .header__content .header__content__switcher .switcher-office {
+  width: 75px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .header .header__content .header__content__contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-family: "TTTravels-DemiBold";
+}
+.header-container .header .header__content .header__content__contact a {
+  color: #404040;
+  text-decoration: none;
+  padding: 0px 10px 0px 0px;
+}
+.header-container .header .header__content .header__content__contact #worktime {
+  border-left: 2px solid #404040;
+  padding: 0px 0px 0px 10px;
+}
+.header-container .header .header__content .header__content__navigation {
+  z-index: 3;
+  flex: 0 0 auto;
+}
+.header-container .header .header__content .header__content__navigation ul {
+  display: flex;
+  gap: 30px;
+}
+.header-container .header .header__content .header__content__navigation ul li {
+  height: 80px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.header-container .header .header__content .header__content__navigation ul li .navigation__item {
+  color: #404040;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  font-family: "TTTravels-Medium";
+}
+
+@media (max-width: 1280px) {
+  .header-container .header {
+    max-width: 1280px;
+  }
+  .header-container .header .header__content {
+    height: 60px;
+  }
+  .header-container .header .header__content .header__content__logo img {
+    width: 80%;
+  }
+  .header-container .header .header__content .header__content__switcher {
+    width: 100px;
+    font-size: 12px;
+    margin: 0px 0px 0px 10px;
+  }
+  .header-container .header .header__content .header__content__switcher .switcher-home {
+    width: 55px;
+    height: 30px;
+  }
+  .header-container .header .header__content .header__content__switcher .switcher-office {
+    width: 65px;
+  }
+  .header-container .header .header__content .header__content__contact {
+    font-size: 12px;
+  }
+  .header-container .header .header__content .header__content__contact a {
+    color: #404040;
+    text-decoration: none;
+    padding: 0px 5px 0px 0px;
+  }
+  .header-container .header .header__content .header__content__contact #worktime {
+    border-left: 2px solid #404040;
+    padding: 0px 0px 0px 5px;
+  }
+  .header-container .header .header__content .header__content__navigation ul {
+    gap: 20px;
+    padding: 0px 20px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li {
+    height: 60px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li .navigation__item {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .hero-section .hero-section__content {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-img {
+    flex: 0 0 100%;
+    height: 400px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title {
+    flex: 0 0 100%;
+    max-width: 600px;
+    margin: -10px auto 0px auto;
+    text-align: center;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title h1 {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0px 0px 40px 0px;
+  }
+  .advantages-section {
+    padding: 50px 0px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item {
+    flex: 0 0 40%;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner .advantages-section__content__item__headline {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-1 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-2 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-3 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-4 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__description {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .how-section {
+    margin: 0px;
+  }
+  .how-section .how-section__content {
+    padding: 0px 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .how-section .how-section__content .how-section__content__headline {
+    flex: 0 0 100%;
+    margin: 0px 0px 40px 0px;
+  }
+  .how-section .how-section__content .how-section__content__paragraph {
+    flex: 0 0 100%;
+  }
+  .how-section .how-section__fullscreen {
+    display: none;
+    position: relative;
+    height: 400px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block {
+    width: 200px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 20px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    top: 80px;
+    left: 20px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+    margin: 3px 10px 0px 0px;
+  }
+  .how-section .how-section__fullscreen-mob {
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 60px 0px 0px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: static;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus {
+    position: absolute;
+    background-image: url("../img/+.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-1 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-2 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-3 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-4 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block {
+    position: relative;
+    background-color: #5a30f0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 20px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    font-size: 16px;
+    line-height: 1;
+    font-family: "TTTravels-Medium";
+    position: static;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 20px;
+    line-height: 120%;
+    font-family: "TTTravels-Light";
+    cursor: pointer;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active {
+    font-style: italic;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    content: " ";
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin: 3px 10px 0px 0px;
+    background-image: url("../img/right-arrow.png");
+    background-size: 100%;
+  }
+
+  .header-container {
+    max-width: 1024px;
+  }
+  .header-container .header {
+    padding: 0px 15px !important;
+    max-width: 1024px;
+  }
+  .header-container .header .header__content {
+    height: 60px !important;
+    margin: 0px;
+    margin: 0px !important;
+  }
+  .header-container .header .header__content .header__content__logo img {
+    width: 80%;
+  }
+  .header-container .header .header__content .header__content__burger {
+    z-index: 3;
+  }
+  .header-container .header .header__content .header__content__burger:before, .header-container .header .header__content .header__content__burger:after {
+    content: "";
+    background-color: #404040;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .header-container .header .header__content .header__content__burger:before {
+    top: 0;
+  }
+  .header-container .header .header__content .header__content__burger:after {
+    bottom: 0;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 50;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger span {
+    transform: scale(0);
+  }
+  .header-container .header .header__content .header__content__burger.active-burger:before {
+    transform: rotate(45deg);
+    top: 4px;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger:after {
+    transform: rotate(-45deg);
+    bottom: 4px;
+  }
+  .header-container .header .header__content .header__content__switcher {
+    display: none;
+  }
+  .header-container .header .header__content .header__content__contact {
+    font-size: 12px;
+    position: absolute;
+    right: 10%;
+  }
+  .header-container .header .header__content .header__content__contact a {
+    color: #404040;
+    text-decoration: none;
+    padding: 0px 5px 0px 0px;
+  }
+  .header-container .header .header__content .header__content__contact #worktime {
+    border-left: 2px solid #404040;
+    padding: 0px 0px 0px 5px;
+  }
+  .header-container .header .header__content .header__content__navigation {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 88%;
+    height: 100%;
+    background-color: #5a30f0;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.07);
+  }
+  .header-container .header .header__content .header__content__navigation ul {
+    padding: 15px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li {
+    height: 40px;
+    align-items: center;
+  }
+  .header-container .header .header__content .header__content__navigation ul li .navigation__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color: white;
+  }
+  .header-container .header .header__content .header__content__navigation.active-burger {
+    top: 0;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .hero-section .hero-section__content {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-img {
+    flex: 0 0 100%;
+    height: 300px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title {
+    flex: 0 0 100%;
+    max-width: 400px;
+    padding: 0px 20px;
+    margin: -10px auto 0px auto;
+    text-align: center;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title h1 {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0px 0px 40px 0px;
+  }
+  .advantages-section {
+    padding: 50px 0px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item {
+    flex: 0 0 60%;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner .advantages-section__content__item__headline {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-1 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-2 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-3 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-4 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__description {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .how-section {
+    margin: 0px;
+  }
+  .how-section .how-section__content {
+    padding: 0px 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .how-section .how-section__content .how-section__content__headline {
+    flex: 0 0 100%;
+    margin: 0px 0px 40px 0px;
+  }
+  .how-section .how-section__content .how-section__content__paragraph {
+    flex: 0 0 100%;
+  }
+  .how-section .how-section__fullscreen {
+    display: none;
+    position: relative;
+    height: 400px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block {
+    width: 200px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 20px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    top: 80px;
+    left: 20px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+    margin: 3px 10px 0px 0px;
+  }
+  .how-section .how-section__fullscreen-mob {
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 60px 0px 0px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: static;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus {
+    position: absolute;
+    background-image: url("../img/+.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-1 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-2 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-3 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-4 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block {
+    position: relative;
+    background-color: #5a30f0;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 20px 0px 5px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    font-size: 16px;
+    line-height: 1;
+    font-family: "TTTravels-Medium";
+    position: static;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 14px;
+    line-height: 1;
+    font-family: "TTTravels-Light";
+    cursor: pointer;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active {
+    font-style: italic;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    display: none;
+  }
+
+  .header-container {
+    max-width: 768px;
+  }
+  .header-container .header {
+    padding: 0px 15px !important;
+    max-width: 768px;
+  }
+  .header-container .header .header__content {
+    height: 60px !important;
+    margin: 0px;
+    margin: 0px !important;
+  }
+  .header-container .header .header__content .header__content__logo img {
+    width: 80%;
+  }
+  .header-container .header .header__content .header__content__burger {
+    z-index: 3;
+  }
+  .header-container .header .header__content .header__content__burger:before, .header-container .header .header__content .header__content__burger:after {
+    content: "";
+    background-color: #404040;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .header-container .header .header__content .header__content__burger:before {
+    top: 0;
+  }
+  .header-container .header .header__content .header__content__burger:after {
+    bottom: 0;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 50;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger span {
+    transform: scale(0);
+  }
+  .header-container .header .header__content .header__content__burger.active-burger:before {
+    transform: rotate(45deg);
+    top: 4px;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger:after {
+    transform: rotate(-45deg);
+    bottom: 4px;
+  }
+  .header-container .header .header__content .header__content__switcher {
+    display: none;
+  }
+  .header-container .header .header__content .header__content__contact {
+    font-size: 12px;
+    position: absolute;
+    right: 10%;
+  }
+  .header-container .header .header__content .header__content__contact a {
+    color: #404040;
+    text-decoration: none;
+    padding: 0px 5px 0px 0px;
+  }
+  .header-container .header .header__content .header__content__contact #worktime {
+    border-left: 2px solid #404040;
+    padding: 0px 0px 0px 5px;
+  }
+  .header-container .header .header__content .header__content__navigation {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 88%;
+    height: 100%;
+    background-color: #5a30f0;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.07);
+  }
+  .header-container .header .header__content .header__content__navigation ul {
+    padding: 15px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li {
+    height: 40px;
+    align-items: center;
+  }
+  .header-container .header .header__content .header__content__navigation ul li .navigation__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color: white;
+  }
+  .header-container .header .header__content .header__content__navigation.active-burger {
+    top: 0;
+  }
+}
+@media (max-width: 320px) {
+  .content {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .hero-section .hero-section__content {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-img {
+    flex: 0 0 100%;
+    height: 300px;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title {
+    flex: 0 0 100%;
+    max-width: 280px;
+    padding: 0px 20px;
+    margin: -10px auto 0px auto;
+    text-align: center;
+  }
+  .hero-section .hero-section__content .hero-section__content__hero-title h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0px 0px 40px 0px;
+  }
+  .advantages-section {
+    padding: 50px 0px;
+  }
+  .advantages-section .advantages-section__content {
+    padding: 0px 20px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item {
+    flex: 0 0 80%;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner .advantages-section__content__item__headline {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-1 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-2 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-3 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__inner #card-img-4 {
+    width: 160px;
+    height: 130px;
+  }
+  .advantages-section .advantages-section__content .advantages-section__content__item .advantages-section__content__item__description {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .how-section {
+    margin: 0px;
+  }
+  .how-section .how-section__content {
+    padding: 0px 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .how-section .how-section__content .how-section__content__headline {
+    flex: 0 0 100%;
+    margin: 0px 0px 40px 0px;
+    font-size: 24px;
+  }
+  .how-section .how-section__content .how-section__content__paragraph {
+    flex: 0 0 100%;
+  }
+  .how-section .how-section__fullscreen {
+    display: none;
+    position: relative;
+    height: 400px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block {
+    width: 200px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 20px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    top: 80px;
+    left: 20px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 20px;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    content: " ";
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+    margin: 3px 10px 0px 0px;
+  }
+  .how-section .how-section__fullscreen-mob {
+    position: relative;
+    height: auto;
+    display: block;
+    margin: 60px 0px 0px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    position: static;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus {
+    position: absolute;
+    background-image: url("../img/+.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg .plus:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-1 {
+    top: 30%;
+    left: 35%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-2 {
+    top: 60%;
+    left: 30%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-3 {
+    top: 92%;
+    left: 40%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-4 {
+    top: 60%;
+    left: 50%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-5 {
+    top: 80%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-6 {
+    top: 50%;
+    left: 60%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .bcg #plus-7 {
+    top: 66%;
+    left: 75%;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-1 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-2 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-3 {
+    background-image: url("../img/how-bg-1.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__img .slide-4 {
+    background-image: url("../img/how-bg-2.png");
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block {
+    position: relative;
+    background-color: #5a30f0;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner {
+    padding: 20px 0px 10px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__headline {
+    font-size: 16px;
+    line-height: 1;
+    font-family: "TTTravels-Medium";
+    position: static;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item {
+    font-size: 14px;
+    line-height: 1;
+    font-family: "TTTravels-Light";
+    cursor: pointer;
+    margin: 15px 0px;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a {
+    text-decoration: none;
+    color: white;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active {
+    font-style: italic;
+  }
+  .how-section .how-section__fullscreen-mob .how-section__fullscreen__left-block .how-section__fullscreen__left-block__inner .how-section__fullscreen__left-block__inner__nav .nav__item a.active:before {
+    display: none;
+  }
+
+  .header-container {
+    max-width: 320px;
+  }
+  .header-container .header {
+    padding: 0px 15px !important;
+    max-width: 320px;
+  }
+  .header-container .header .header__content {
+    height: 60px !important;
+    margin: 0px;
+    margin: 0px !important;
+  }
+  .header-container .header .header__content .header__content__logo img {
+    width: 80%;
+  }
+  .header-container .header .header__content .header__content__burger {
+    z-index: 3;
+  }
+  .header-container .header .header__content .header__content__burger:before, .header-container .header .header__content .header__content__burger:after {
+    content: "";
+    background-color: #404040;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .header-container .header .header__content .header__content__burger:before {
+    top: 0;
+  }
+  .header-container .header .header__content .header__content__burger:after {
+    bottom: 0;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger {
+    position: fixed;
+    top: 24px;
+    right: 16px;
+    z-index: 50;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger span {
+    transform: scale(0);
+  }
+  .header-container .header .header__content .header__content__burger.active-burger:before {
+    transform: rotate(45deg);
+    top: 4px;
+  }
+  .header-container .header .header__content .header__content__burger.active-burger:after {
+    transform: rotate(-45deg);
+    bottom: 4px;
+  }
+  .header-container .header .header__content .header__content__switcher {
+    display: none;
+  }
+  .header-container .header .header__content .header__content__contact {
+    font-size: 12px;
+    position: absolute;
+    right: 15%;
+  }
+  .header-container .header .header__content .header__content__contact a {
+    color: #404040;
+    text-decoration: none;
+    padding: 0px 5px 0px 0px;
+  }
+  .header-container .header .header__content .header__content__contact #worktime {
+    border-left: 2px solid #404040;
+    padding: 0px 0px 0px 5px;
+  }
+  .header-container .header .header__content .header__content__navigation {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #5a30f0;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.07);
+  }
+  .header-container .header .header__content .header__content__navigation ul {
+    padding: 15px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+  .header-container .header .header__content .header__content__navigation ul li {
+    height: 40px;
+    align-items: center;
+  }
+  .header-container .header .header__content .header__content__navigation ul li .navigation__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    color: white;
+  }
+  .header-container .header .header__content .header__content__navigation.active-burger {
+    top: 0;
+  }
+}
+@font-face {
+  font-family: "TTTravels-Bold";
+  src: url("../fonts/TTTravels-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TTTravels-DemiBold";
+  src: url("../fonts/TTTravels-DemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TTTravels-Light";
+  src: url("../fonts/TTTravels-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TTTravels-Medium";
+  src: url("../fonts/TTTravels-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TTTravels-Regular";
+  src: url("../fonts/TTTravels-Regular.ttf") format("truetype");
+}
+
+/*# sourceMappingURL=style.css.map */
